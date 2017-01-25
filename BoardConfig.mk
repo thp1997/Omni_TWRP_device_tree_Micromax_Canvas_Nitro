@@ -1,9 +1,9 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/xiaomi/minote/BoardConfigVendor.mk
+-include vendor/Microamx/A311/BoardConfigVendor.mk
 
-DEVICE_FOLDER := device/xiaomi/minote
+DEVICE_FOLDER := device/Microamx/A311
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6592
@@ -18,11 +18,15 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 ARCH_ARM_HAVE_TLS_REGISTER := true
 
-TARGET_BOOTLOADER_BOARD_NAME := minote
+TARGET_BOOTLOADER_BOARD_NAME := A311
 
-BOARD_KERNEL_CMDLINE := 
+# Kernel 
+BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
+TARGET_PREBUILT_KERNEL := device/Micromax/A311/kernel
+BOARD_CUSTOM_BOOTIMG_MK := device/Micromax/A311/bootimg.mk
+BOARD_CUSTOM_BOOTIMG := true
 
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
@@ -33,7 +37,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_SUPPRESS_SECURE_ERASE := true
 BOARD_SUPPRESS_EMMC_WIPE := true 
-TARGET_PREBUILT_KERNEL := device/xiaomi/minote/kernel
+TARGET_PREBUILT_KERNEL := device/Micromax/A311/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 
@@ -99,12 +103,12 @@ persist.sys.usb.config=mass_storage,adb \
 ro.mount.fs=EXT4
 
 #PhilZ Touch build flags for MTK
-TARGET_COMMON_NAME := minote
+TARGET_COMMON_NAME := A311
 BOARD_USE_MTK_LAYOUT := true
 BOARD_USE_NTFS_3G := false
 TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file
-TARGET_DEVICE := minote
+TARGET_DEVICE := A311
 BRIGHTNESS_SYS_FILE := /sys/class/leds/lcd-backlight/brightness
-BOARD_CUSTOM_BOOTIMG_MK := device/xiaomi/minote/bootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/Micromax/A311/bootimg.mk
