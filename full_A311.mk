@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := minote
-PRODUCT_NAME := full_minote
-PRODUCT_BRAND := xiaomi
-PRODUCT_MODEL := minote
-PRODUCT_MANUFACTURER := xiaomi
+PRODUCT_DEVICE := A311
+PRODUCT_NAME := full_A311
+PRODUCT_BRAND := Micromax
+PRODUCT_MODEL := A311
+PRODUCT_MANUFACTURER := Micromax
