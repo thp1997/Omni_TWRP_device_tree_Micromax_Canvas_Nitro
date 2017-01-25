@@ -1,9 +1,9 @@
 USE_CAMERA_STUB := true
 
 # inherit from the proprietary version
--include vendor/Microamx/A311/BoardConfigVendor.mk
+-include vendor/Micromax/A311/BoardConfigVendor.mk
 
-DEVICE_FOLDER := device/Microamx/A311
+DEVICE_FOLDER := device/Micromax/A311
 
 # Platform
 TARGET_BOARD_PLATFORM := mt6592
